@@ -1,0 +1,89 @@
+body{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+    background-color: #f0f8ff;
+}
+
+.container{
+    text-align: center;
+}
+
+.digital-clock{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.date{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.analog-clock{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 30px;
+}
+
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    background-color: #333;
+}
+
+.hour-hand{
+    width: 6px;
+    height: 60px;
+    margin-left: -3px;
+}
+
+.minute-hand{
+    width: 4px;
+    height: 80px;
+    margin-left: -2px;
+}
+
+.second-hand{
+    width: 2px;
+    height: 90px;
+    background-color: red;
+    margin-left: -1px;
+}
+
+.center-circle{
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: bckground-color 0.3s;
+}
+
+button:hover{
+    background-color: #45a049;
+}
